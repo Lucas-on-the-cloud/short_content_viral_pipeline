@@ -1,0 +1,36 @@
+project:
+  seed: 42
+  niche: "CHANGE_ME"
+
+target:
+  horizon_days: 7
+  viral_quantile: 0.80
+  target_col: breakout_score
+  raw_view_col: views_7d
+  creator_baseline_col: creator_median_views_prev10
+
+split:
+  type: group
+  group_col: creator_id
+  test_size: 0.20
+  validation_size: 0.15
+
+visual:
+  model_id: openai/clip-vit-base-patch32
+  num_frames: 8
+
+text:
+  model_id: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+  fields:
+    - caption
+    - hashtags
+    - transcript
+
+audio:
+  sample_rate: 22050
+  n_mfcc: 20
+
+clustering:
+  pca_dim: 64
+  k_min: 5
+  k_max: 12
