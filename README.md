@@ -210,3 +210,33 @@ python src/cluster_content.py --input data/processed/content_embeddings.csv --ta
 ```
 
 See `docs/` for the research plan, papers, datasets, and experiment design.
+
+
+## 12. Vietnamese comics startup extension
+
+The repository also contains an optional business/domain adaptation layer for a Vietnamese comics startup:
+
+```text
+domains/vietnamese_comics/
+├── README.md
+├── config.yaml
+├── data_schema.md
+├── experiment_plan.md
+├── feature_spec.md
+└── taxonomy.yaml
+```
+
+This extension focuses on:
+- TikTok first, then Facebook Reels;
+- Vietnamese-language short-form content;
+- comics / manga / manhwa / manhua / webtoon;
+- hook analysis in the first ~3 seconds;
+- story/narrative structure;
+- comic-specific visual features;
+- platform-normalized breakout scores;
+- weekly content-cluster trend momentum;
+- a future company-facing draft analyzer.
+
+The **course project core stays unchanged and platform-agnostic**. The Vietnamese comics layer reuses the same multimodal embeddings, normalized labels, clustering, and evaluation pipeline, then adds domain-specific features and business outputs.
+
+See [domains/vietnamese_comics/README.md](domains/vietnamese_comics/README.md) for the extension design.
