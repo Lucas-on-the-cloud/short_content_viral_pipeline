@@ -1,0 +1,39 @@
+domain:
+  name: vietnamese_comics
+  language: vi
+  primary_platform: tiktok
+  secondary_platform: facebook_reels
+
+data:
+  target_min_videos: 3000
+  preferred_max_videos: 10000
+  fixed_horizon_days: 7
+
+hook:
+  start_sec: 0
+  end_sec: 3
+
+text:
+  fields:
+    - caption
+    - hashtags
+    - transcript_vi
+    - ocr_text_vi
+  hook_fields:
+    - hook_text
+
+labels:
+  regression: breakout_score
+  ranking: platform_percentile_7d
+  classification_quantile: 0.80
+
+trend:
+  aggregation: weekly
+  min_cluster_size_for_reporting: 20
+
+platform_normalization:
+  group_by:
+    - platform
+  optional_group_by:
+    - story_genre
+    - collection_week
