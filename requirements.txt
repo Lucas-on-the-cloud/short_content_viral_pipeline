@@ -1,0 +1,17 @@
+numpy>=1.26
+pandas>=2.1
+scipy>=1.11
+scikit-learn>=1.4
+xgboost>=2.0
+pyyaml>=6.0
+tqdm>=4.66
+matplotlib>=3.8
+opencv-python-headless>=4.9
+Pillow>=10.0
+torch>=2.2
+transformers>=4.45
+sentence-transformers>=3.0
+librosa>=0.10
+umap-learn>=0.5
+hdbscan>=0.8
+shap>=0.45
