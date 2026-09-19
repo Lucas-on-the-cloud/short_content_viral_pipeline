@@ -1,0 +1,109 @@
+domain: vietnamese_comics
+version: 1
+
+content_formats:
+  - id: story_recap
+    vi: "tóm tắt / kể lại nội dung truyện"
+  - id: review_recommendation
+    vi: "review / đề xuất truyện"
+  - id: motion_comic
+    vi: "motion comic / hoạt họa từ panel"
+  - id: panel_narration
+    vi: "panel truyện + giọng kể / TTS"
+  - id: character_edit
+    vi: "edit nhân vật"
+  - id: meme_comedy
+    vi: "meme / nội dung hài từ truyện"
+  - id: chapter_teaser
+    vi: "teaser chương mới"
+  - id: cliffhanger_highlight
+    vi: "đoạn cao trào / cliffhanger"
+  - id: quote_emotion
+    vi: "trích thoại / câu nói cảm xúc"
+  - id: comparison_ranking
+    vi: "so sánh / xếp hạng nhân vật hoặc bộ truyện"
+  - id: behind_the_scenes
+    vi: "vẽ truyện / hậu trường / quy trình"
+  - id: trend_remix
+    vi: "dùng trend âm thanh / template để remix nội dung truyện"
+
+story_genres:
+  - romance
+  - school_life
+  - fantasy
+  - action
+  - cultivation
+  - reincarnation
+  - villainess
+  - historical
+  - comedy
+  - horror
+  - thriller
+  - slice_of_life
+  - boys_love
+  - girls_love
+  - drama
+  - revenge
+  - mystery
+
+hook_types:
+  - curiosity_question
+  - shock_statement
+  - conflict_first
+  - character_reveal
+  - transformation
+  - ranking_claim
+  - recommendation_claim
+  - emotional_quote
+  - spoiler_tease
+  - cliffhanger_open
+  - problem_solution
+  - none_or_weak
+
+narrative_features:
+  - conflict_present
+  - payoff_present
+  - twist_present
+  - cliffhanger_present
+  - romance_signal
+  - humor_signal
+  - suspense_signal
+  - emotional_peak
+  - protagonist_focus
+  - antagonist_focus
+  - first_person_storytelling
+  - narrator_summary
+
+visual_features:
+  - comic_panel_dominant
+  - real_person_present
+  - face_closeup
+  - speech_bubble_present
+  - subtitle_present
+  - high_text_density
+  - zoom_pan_motion
+  - rapid_panel_switching
+  - grayscale_dominant
+  - strong_color_contrast
+  - split_screen
+  - template_overlay
+
+audio_features:
+  - human_voice
+  - text_to_speech
+  - background_music
+  - trending_sound
+  - dialogue_dub
+  - silent_or_near_silent
+
+cta_types:
+  - follow_for_part_2
+  - comment_for_title
+  - read_full_chapter
+  - link_in_bio
+  - save_share
+  - no_cta
+
+platforms:
+  - tiktok
+  - facebook_reels
